@@ -3,7 +3,7 @@
 
 #### 操作步骤：
 1. 创建flutter项目
-   使用flutter create -t module my_flutter创建 Flutter Module 工程。
+   使用`flutter create -t module my_flutter`创建 Flutter Module 工程。
    
 2. 拷贝相关文件
    下载项目 [iOS_Flutter_Hybrid_Project](https://github.com/CaffreySun/iOS_Flutter_Hybrid_Project)
@@ -13,22 +13,23 @@
    
 3. 修改脚本build_ios.sh，将本项目中的build_ios.sh内容拷贝过去。
    
-4. 在Native工程执行 pod install
+4. 在Native工程执行 `pod install`
 
 #### 涉及到的操作
 1. 给项目配置单独的Flutter SDK,以防和团体合作中各自本地电脑的flutter SDK发送冲突
    借用[flutter_wrapper](https://juejin.im/post/5c3ae5ef518825242165c5ca)工具
-      * 进入 Flutter 工程目录安装 'flutter_wrapper'，执行 sh -c "$(curl -fsSL https://raw.githubusercontent.com/passsy/flutter_wrapper/master/install.sh)"
+      * 进入 Flutter 工程目录安装 'flutter_wrapper'，
+      执行 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/passsy/flutter_wrapper/master/install.sh)"`
       * 此后在当前 Flutter 工程需要使用 flutter 命令的地方都使用 ./flutterw来代替
 
 2. 自定义插件
    Flutter package包括两种类型： Dart packages（Dart包）  和 Plugin packages（插件包）
    * 插件包的创建
-   命令 flutter create --template=plugin hello 
-   或者  flutter create --org com.example  --template=plugin hello 其中  com.example为包名
+   命令 `flutter create --template=plugin hello` 
+   或者  `flutter create --org com.example  --template=plugin hello` 其中  com.example为包名
    * 插件包的引入，参考：
-   、、、
+   ```
    nativefetch:
-     path: ./plugins/nativefetch 
-   、、、
+     path: ./plugins/nativefetch  
+   ```
    注意以上的格式，path缩进2个空格
