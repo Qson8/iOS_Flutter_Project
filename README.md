@@ -17,7 +17,7 @@
 
 #### 涉及到的操作
 1. 给项目配置单独的Flutter SDK,以防和团体合作中各自本地电脑的flutter SDK发送冲突
-   借用flutter_wrapper工具
+   借用[flutter_wrapper](https://juejin.im/post/5c3ae5ef518825242165c5ca)工具
       * 进入 Flutter 工程目录安装 'flutter_wrapper'，执行 sh -c "$(curl -fsSL https://raw.githubusercontent.com/passsy/flutter_wrapper/master/install.sh)"
       * 此后在当前 Flutter 工程需要使用 flutter 命令的地方都使用 ./flutterw来代替
 
@@ -27,6 +27,8 @@
    命令 flutter create --template=plugin hello 
    或者  flutter create --org com.example  --template=plugin hello 其中  com.example为包名
    * 插件包的引入，参考：
+   、、、
    nativefetch:
      path: ./plugins/nativefetch 
+   、、、
    注意以上的格式，path缩进2个空格
