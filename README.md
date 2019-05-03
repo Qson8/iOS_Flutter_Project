@@ -15,7 +15,7 @@
    
 4. 在Native工程执行 `pod install`
 
-#### 涉及到的操作
+#### 其他操作
 1. 给项目配置单独的Flutter SDK,以防和团体合作中各自本地电脑的flutter SDK发送冲突
    借用[flutter_wrapper](https://juejin.im/post/5c3ae5ef518825242165c5ca)工具
       * 进入 Flutter 工程目录安装 'flutter_wrapper'，
@@ -33,3 +33,10 @@
      path: ./plugins/nativefetch  
    ```
    注意以上的格式，path缩进2个空格
+
+#### 热重载
+     debug 模式下可以使用热重载对flutter进行调试和开发，可使用如下命令
+     `.flutter/bin/flutter attach --debug-port=xxxx`
+     安装了flutter_wrapper也可以使用
+     `./flutterw attach --debug-port=xxxx`
+     xxxx 为端口号
