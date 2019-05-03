@@ -34,9 +34,12 @@
    ```
    注意以上的格式，path缩进2个空格
 
+
 #### 热重载
-     debug 模式下可以使用热重载对flutter进行调试和开发，可使用如下命令
+   创建flutter项目
+   debug 模式下可以使用热重载对flutter进行调试和开发，可使用如下命令
+     
      `.flutter/bin/flutter attach --debug-port=xxxx`
-     安装了flutter_wrapper也可以使用
+   安装了flutter_wrapper也可以使用
      `./flutterw attach --debug-port=xxxx`
-     xxxx 为端口号
+   xxxx 为端口号
